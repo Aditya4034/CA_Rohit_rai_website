@@ -1,0 +1,293 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Home Section */
+#home {
+    background-image: url('img8.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    color: rgb(19, 71, 77);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-animation {
+    display: flex;
+    justify-content: center;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+}
+
+/* Services Section */
+.services-section {
+    padding: 50px;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    /* transform: scale(1.2); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-box img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.service-box h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ffcc00;
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ffcc00;
+}
+
+/* Maps Section */
+.maps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.map-box {
+    width: 45%;
+    text-align: center;
+}
+
+.map-box h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .maps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-box {
+        width: 90%;
+    }
+}
+
+
+.map-container {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        width: 98%;
+        padding: 1%;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 16;
+    }
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 90%;
+    }
+
+    .about-img {
+        width: 90%;
+    }
+    .contact-section{
+        width: 90%;
+        padding: 5%;
+    }
+    .map-container{
+       width: 90%;
+    }
+}
